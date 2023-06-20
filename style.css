@@ -1,0 +1,288 @@
+/* Interpage Styles */
+body {
+	background-color: #001a1b;
+	font-family: Georgia, Garamond, serif;
+	color: white;
+	
+	text-align: center;
+}
+
+button {
+	font-size: 24px;
+	font-family: Georgia, Garamond, serif;
+	
+	color: white;
+	background-color: black;
+	border-color: white;
+	
+	padding: 8px 32px;
+}
+
+button:hover {
+	border-width: thick;
+	font-weight: bold;
+	
+	margin: -3px 0px;
+}
+
+.button-container {
+	padding: 96px;
+}
+
+.content {
+	width: 60%;
+
+	margin: 0px auto;
+	
+	font-size: 22px;
+}
+
+.author {
+    font-size: 16px;
+}
+
+.bottom-text {
+	margin-bottom: 0px !important;
+}
+
+.table-of-contents {
+	display: inline-block;
+	text-align: left;
+	background-color: black;
+	padding: 0px 256px 12px;
+	margin-bottom: 96px;
+}
+
+.table-of-contents > h1 {
+	text-align: center;
+}
+
+.contents-link {
+	text-decoration: none;
+	color: white;
+	margin: 12px;
+	font-size: 18px;
+}
+
+.contents-link:hover {
+	border-bottom: solid 3px;
+}
+
+ol > li > p {
+	font-size: 20px !important;
+	font-weight: bold;
+}
+
+.contents-info > h1 {
+	font-size: 96px;
+}
+
+.contents-info > h2 {
+	font-size: 64px;
+}
+
+.contents-info > h3 {
+	font-size: 32px;
+}
+
+.contents-info > p {
+	font-size: 18px;
+
+	margin-bottom: 128px;
+}
+
+.norm-link {
+	color: lightblue;
+}
+
+.citation {
+	font-size: 10px;
+}
+
+.citation > p > a {
+	color: lightblue;
+}
+
+#homepage-citation {
+	padding-top: 64px;
+}
+
+.validater-container {
+	padding: 32px;
+}
+
+.validater-container > img {
+	width: 200px;
+	margin: 12px;
+}
+
+/* Homepage Styles */
+#banner {
+	position: relative;
+}
+
+#banner-text {
+	position: absolute;
+	bottom: 0px;	
+	left: 50%;
+	transform: translate(-50%, 0);
+	
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#banner-title {
+	font-size: 96px;
+	margin: 0px;
+}
+
+#banner-subtitle {
+	font-size: 32px;
+}
+
+#overview {
+	width: 800px;
+	margin: 0px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.overview-info {
+	margin: 20px;
+}
+
+.overview-info > img {
+	width: 150px;
+}
+
+#intro {
+	margin: 96px auto;
+}
+
+#resources {
+	width: 1200px;
+	margin: 0px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 50px;
+}
+
+.link-container {
+	position: relative;
+}
+
+.link-container:hover {
+	filter: brightness(200%)
+}
+
+.link-image {
+	filter: brightness(30%);
+    
+    width: 400px;
+}
+
+.link-text {
+	position: absolute;
+	margin: 0px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-decoration: none; 
+	color: white;
+	font-size: 32px;
+	
+}
+
+/* Abilities Page Styles */
+video {
+	width: 600px;
+}
+
+#abilities-info > img {
+	width: 70px;
+	margin: 32px;
+}
+
+table {
+	margin: -96px auto 128px;
+	border-collapse: collapse;
+	border: 1px solid white;
+}
+
+tr > * {
+	border: 1px solid white;
+	padding: 8px 12px;
+}
+
+/* Guide Page Styles */
+iframe {
+	width: 1000px;
+	height: 800px;
+}
+
+#guide-info > img {
+	width: 100px;
+	margin: 32px;
+}
+
+.small-icon {
+	width: 50px !important;
+}
+
+/* Lore Pages Styles */
+.lore-info {
+	background-color: black;
+	padding: 32px 64px;
+}
+
+.lore-info > h1 {
+	font-size: 64px;
+	margin-top: 0px;
+}
+
+.lore-info > .author {
+	margin-bottom: 64px;
+}
+
+.lore-info > p {
+	margin-bottom: 24px;
+}
+
+.story-button {
+	padding-bottom: 0px;
+}
+
+/* Skin Page Styles */
+#skin-container > img {
+	width: 1000px;
+	
+	margin-bottom: 16px;
+}
+
+#skin-container > h1 {
+	font-size: 24px;
+	
+	margin-bottom: 150px;
+}
+
+/* Reference Page Styles */
+#references > h1 {
+	margin-top: 0px;
+}
+
+#references > p {
+	font-size: 14px;
+}
+
+#references > p > a {
+	color: lightblue;
+}
+
+.italic {
+	font-style: italic;
+}

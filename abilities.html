@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Abilities and Mechanics</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		<!-- Return Home Button -->
+		<div id="abilities-top" class="button-container"><form action="index.html" method="get"><button>Return Home</button></form></div>
+		
+		<!-- Table of Contents -->
+		<div class="table-of-contents">
+			<h1>Content</h1>
+			
+			<ol class="contents-list">
+				<li>
+					<p><a class="contents-link" href="#abilities">Abilities</a></p>
+					
+					<ul>
+						<li><a class="contents-link" href="#passive">Passive: Adaptive Defenses</a></li>
+						<li><a class="contents-link" href="#q">Q: Precision Protocol</a></li>
+						<li><a class="contents-link" href="#w">W: Tactical Sweep</a></li>
+						<li><a class="contents-link" href="#e">E: Hookshot</a></li>
+						<li><a class="contents-link" href="#r">R: The Hextech Ultimatum</a></li>
+					</ul>
+				</li>
+				
+				<li>
+					<p><a class="contents-link" href="#mechanics">Mechanics</a></p>
+					
+					<ul>
+						<li><a class="contents-link" href="#auto-q">Auto Attack + Q</a></li>
+						<li><a class="contents-link" href="#e-q2">E + Q2</a></li>
+						<li><a class="contents-link" href="#q-w">Q + W</a></li>
+						<li><a class="contents-link" href="#w-e-flash">W/E + Flash</a></li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+		
+		<!-- Content of Table of Contents -->
+		<div class="content contents-info" id="abilities-info">
+			<!-- Abilities Section -->
+			<h1 id="abilities">Abilities</h1>
+			
+			<h2 id="passive">Passive: Adaptive Defenses</h2>
+			<video id="video" autoplay loop muted>
+				<source src="videos/passive.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<br>
+			<img src="images/abilities/passive.png" alt="Passive">
+			<p>Auto attacking champions gives Camille a shield of the target's
+			damage type (Physical/Magic) based on a percentage of Camille's 
+			maximum health.</p>
+			<table>
+				<tr>
+					<th>Level</th>
+					<td>1</td>
+					<td>7</td>
+					<td>13</td>
+				</tr>
+				<tr>
+					<th>Cooldown</th>
+					<td>20 s</td>
+					<td>15 s</td>
+					<td>10 s</td>
+				</tr>
+			</table>
+			
+			<h2 id="q">Q: Precision Protocol</h2>
+			<video autoplay loop muted>
+				<source src="videos/q.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<br>
+			<img id="ability-icon" src="images/abilities/q.png" alt="Q Abilitiy">
+			<p>Camille's next auto attack has bonus range, deals bonus damage
+			and gives bonus movement speed. Can be recast. Bonus damage is 
+			significantly increased if recast after 1.5 seconds.</p>
+			<table>
+				<tr>
+					<th>Level</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<th>Cooldown</th>
+					<td>9 s</td>
+					<td>8.25 s</td>
+					<td>7.5 s</td>
+					<td>6.75 s</td>
+					<td>6 s</td>
+				</tr>
+				<tr>
+					<th>Bonus Physical Damage</th>
+					<td>20% AD</td>
+					<td>25% AD</td>
+					<td>30% AD</td>
+					<td>35% AD</td>
+					<td>40% AD</td>
+				</tr>
+				<tr>
+					<th>Bonus Movement Speed</th>
+					<td>20%</td>
+					<td>25%</td>
+					<td>30%</td>
+					<td>35%</td>
+					<td>40%</td>
+				</tr>
+				<tr>
+					<th>Increased Bonus Damage</th>
+					<td>40% AD</td>
+					<td>50% AD</td>
+					<td>60% AD</td>
+					<td>70% AD</td>
+					<td>80% AD</td>
+				</tr>
+			</table>
+				
+			<h2 id="w">W: Tactical Sweep</h2>
+			<video autoplay loop muted>
+				<source src="videos/w.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<br>
+			<img src="images/abilities/w.png" alt="W Abilitiy">
+			<p>Camille deals damage in a cone after a short delay. The outer
+			edge deals bonus damage and slows enemies, and heals Camille for
+			the bonus damage.</p>
+			<table>
+				<tr>
+					<th>Level</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<th>Cooldown</th>
+					<td>17 s</td>
+					<td>15.5 s</td>
+					<td>14 s</td>
+					<td>12.5 s</td>
+					<td>11 s</td>
+				</tr>
+				<tr>
+					<th>Base Damage</th>
+					<td>70</td>
+					<td>100</td>
+					<td>130</td>
+					<td>160</td>
+					<td>190</td>
+				</tr>
+					<tr>
+					<th>Outer Cone Base Bonus Damage</th>
+					<td>5%</td>
+					<td>5.5%</td>
+					<td>6%</td>
+					<td>6.5%</td>
+					<td>7%</td>
+				</tr>
+				<tr>
+					<th>Non-Epic Monster Base Damage</th>
+					<td>35</td>
+					<td>50</td>
+					<td>65</td>
+					<td>80</td>
+					<td>95</td>
+				</tr>
+				<tr>
+					<th>Outer Cone Non-Epic Monster Base Bonus Damage</th>
+					<td>2.5%</td>
+					<td>2.75%</td>
+					<td>3%</td>
+					<td>3.25%</td>
+					<td>3.5%</td>
+				</tr>
+			</table>
+		
+			<h2 id="e">E: Hookshot</h2>
+			<video autoplay loop muted>
+				<source src="videos/e.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<br>
+			<img src="images/abilities/e.png" alt="E Ability">
+			<p>Camille pulls herself to a wall and leaps a short distance off.
+			Leaps toward enemies have increased range, and enemies hit are 
+			stunned and take damage.</p>
+			<table>
+				<tr>
+					<th>Level</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<th>Cooldown</th>
+					<td>16 s</td>
+					<td>15 s</td>
+					<td>14 s</td>
+					<td>13 s</td>
+					<td>12 s</td>
+				</tr>
+				<tr>
+					<th>Base Damage</th>
+					<td>80</td>
+					<td>110</td>
+					<td>140</td>
+					<td>170</td>
+					<td>200</td>
+				</tr>
+				<tr>
+					<th>Bonus Attack Speed</th>
+					<td>40%</td>
+					<td>45%</td>
+					<td>50%</td>
+					<td>55%</td>
+					<td>60%</td>
+				</tr>
+			</table>
+			
+			<h2 id="r">R: The Hextech Ultimatum</h2>
+			<video autoplay loop muted>
+				<source src="videos/r.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<br>
+			<img src="images/abilities/r.png" alt="R Ability">
+			<p>Camille dashes to target champion, becoming untargetable for a 
+			short period of time and locking them in the area. Her auto attacks
+			deal bonus damage to the target.</p>
+			<table>
+				<tr>
+					<th>Level</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<th>Cooldown</th>
+					<td>140 s</td>
+					<td>115 s</td>
+					<td>90 s</td>
+				</tr>
+				<tr>
+					<th>Zone Duration</th>
+					<td>2.5 s</td>
+					<td>3.25</td>
+					<td>4 s</td>
+				</tr>
+				<tr>
+					<th>Bonus Magic Damage</th>
+					<td>5 + 4% of target's current health</td>
+					<td>10 + 6% of target's current health</td>
+					<td>15 + 8% of target's current health</td>
+				</tr>
+			</table>
+			
+			<!-- Mechanics Section -->
+			<h1 id="mechanics">Mechanics</h1>
+			
+			<h2 id="auto-q">Auto Attack + Q</h2>
+			<img id="auto-attack" src="images/abilities/auto.jpg" alt="Auto Attack">
+			<img src="images/abilities/connector-image.png" alt="Connector Image">
+			<img src="images/abilities/q-1.png" alt="Q Ability">
+			<p>Camille's Q is an empowered auto attack. Empowered auto attacks can 
+			be used as an auto attack reset. This means that the second auto attack
+			(i.e. the empowered one) can land much faster than a normal follow-up 
+			auto attack. This can be used in clutch situations where a few tenths 
+			of a second can make the difference, or in simple short trade scenarios.
+			Note that both Camille's Q1 and Q2 are empowered auto attacks, meaning 
+			that they can both be used as an auto attack reset.</p>
+			
+			<h2 id="e-q2">E + Q2 (With Sheen)</h2>
+			<img src="images/abilities/e-1.png" alt="E Ability">
+			<img src="images/abilities/connector-image-1.png" alt="Connector Image">
+			<img src="images/abilities/q2.jpg" alt="Q2 Ability">
+			<p>Camille's empowered Q2 converts the following auto attack into True
+			damage, meaning it ignores resistances. This significantly increases the
+			damage, as resistances can often block anywhere from 30%-60% of damage.
+			Since only the following auto attack is converted into True damage, you want
+			this single auto attack to do as much damage to maximise the bonus. Sheen 
+			empowers your next auto attack to do bonus damage after using an ability.
+			After using E to engage an enemy, you may be tempted to do an auto attack
+			reset (see <a class="norm-link" href="#auto-q">Auto Attack + Q</a>). However, 
+			doing this uses your Sheen charge, as it triggers on the first unempowered 
+			auto attack after you use your E and then goes on cooldown. On the other hand,
+			using Q2 immediately after landing your E means that the bonus damage of Sheen
+			is converted into True damage. This significantly increases your total damage
+			output. Note that this also works for any item that Sheen builds into.</p>
+			
+			<h2 id="q-w">Q + W</h2>
+			<img src="images/abilities/q-2.png" alt="Q Ability">
+			<img src="images/abilities/connector-image-2.png" alt="Connector Image">
+			<img src="images/abilities/w-1.png" alt="W Ability">
+			<p>Camille's Q grants her bonus movement speed. This is very useful overall.
+			It can be used to chase enemies, dodge skillshots, or disengage and kite away
+			from fights. One common way it is used is to hit the outer edge of her W. 
+			Note that the outer edge of the W deals bonus damage, slows, and heals Camille,
+			so it is important to hit enemies on the outer edge. The bonus movement speed 
+			helps Camille move and reposition during the delay of her W to hit enemies on 
+			the edge. It can also be used to run toward enemies who are slightly out of range
+			and hit her W.</p>
+			
+			<h2 id="w-e-flash">W/E + Flash</h2>
+			<img src="images/abilities/w-2.png" alt="W Ability">
+			<img src="images/abilities/e-2.png" alt="E Ability">
+			<img src="images/abilities/connector-image-3.png" alt="Connector Image">
+			<img id="flash-icon" src="images/runes-and-items/flash.png" alt="Flash">
+			<p class="bottom-text">Both Camille's W and her E can be enhanced by using Flash 
+			while casting. While both cases have their different uses, Flash is used to quickly
+			reposition Camille and therefore her abilities to create quick and unexpected plays.
+			Using Flash in the middle of her W cast-time allows her to quickly move to a different 
+			position, which moves her W as well. This can be used to chase down enemies who are 
+			out of range of her W, or to run away from enemies. Camille can also use Flash while 
+			dashing with her E. This allows her to reposition at the last second and change her initial
+			target landing. This allows her to target previously untargetable enemies. Camille 
+			can Flash over enemies to hit a target behinding someone. Camille can Flash to increase
+			the range of her E and hit enemies out of range. Camille can also Flash sideways to catch 
+			enemies off guard who might expect the E to miss. Overall, combining Flash with Camille's 
+			abilities makes her a more unpredictable and versatile champion.</p>
+		</div>
+		
+		<!-- Return to Top Button -->
+		<div class="button-container"><form action="#abilities-top" method="get"><button>Top</button></form></div>
+		
+		<!-- Image Citations -->
+		<div class="citation">
+			<p>Source: Riot Games. <a href="#video">Camille Abilities</a>. 2016. LeagueOfLegends.com (<a href="https://www.leagueoflegends.com/en-us/champions/camille/">https://www.leagueoflegends.com/en-us/champions/camille/</a>)</p>
+			<p>Source: Riot Games. <a href="#ability-icon">Camille Ability Icons</a>. 2016. LeagueOfLegends.Fandom.com (<a href="https://leagueoflegends.fandom.com/wiki/Camille/LoL">https://leagueoflegends.fandom.com/wiki/Camille/LoL</a>)</p>
+			<p>Source: Riot Games. <a href="#auto-attack">Basic Attack</a>. 2013. LeagueOfLegends.Fandom.com (<a href="https://leagueoflegends.fandom.com/wiki/Senna/LoL">https://leagueoflegends.fandom.com/wiki/Senna/LoL</a>)</p>
+			<p>Source: Riot Games. <a href="#flash-icon">Flash</a>. 2013. LeagueOfLegends.Fandom.com (<a href="https://leagueoflegends.fandom.com/wiki/Summoner_spell">https://leagueoflegends.fandom.com/wiki/Summoner_spell</a>)</p>
+		</div>
+		
+		<!-- Validaters -->
+		<div class="validater-container">
+			<img src="images/validaters/html-validater.png" alt="HTML Validater">
+		</div>
+	</body>
+</html>
