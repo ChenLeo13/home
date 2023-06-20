@@ -111,7 +111,7 @@ ol > li > p {
 	padding: 32px;
 }
 
-.validater-container > img {
+.validater-container > a > img {
 	width: 200px;
 	margin: 12px;
 }
